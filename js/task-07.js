@@ -5,4 +5,4 @@ function onChangeInput() {
   const inputValue = Number(input.value);
   text.style.fontSize = `${inputValue}px`;
 }
-input.addEventListener('change', onChangeInput);
+input.addEventListener('input', onChangeInput);

@@ -4,6 +4,7 @@ const dataLength = textInput.getAttribute('data-length');
 function onInputBlur(event) {
   
   if (event.target.value.length !== Number(dataLength)) {
+    textInput.classList.remove('valid');
   return textInput.classList.add('invalid');
   }
   
