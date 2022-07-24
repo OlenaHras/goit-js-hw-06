@@ -8,7 +8,8 @@ document.querySelector('[data-create]').addEventListener('click', handleClick);
 document.querySelector('[data-destroy]').addEventListener('click', destroyBoxes);
 
 function handleClick() {
-  const amount = input.value;
+  const amount = Number(input.value);
+  console.log(amount);
   createBoxes(amount);
 }
   
